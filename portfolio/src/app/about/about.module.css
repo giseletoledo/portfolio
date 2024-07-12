@@ -1,0 +1,34 @@
+.container {
+    padding: 2rem;
+    background-color: #2c2c2c;
+    border-radius: 8px;
+  }
+  
+  .container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .container li::before {
+    content: '•';
+    color: #d8bfd8;
+    padding-right: 1rem;
+  }  
+
+  .techList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .techItem {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 1rem 0;
+  }
+  
+  .techItem .material-icons {
+    margin-right: 0.8rem;
+    font-size: 1.5rem;
+    color: #d8bfd8;
+  }
