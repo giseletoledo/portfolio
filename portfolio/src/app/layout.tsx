@@ -1,4 +1,3 @@
-// src/app/layout.tsx
 "use client"; // Add double quotes
 
 import { Metadata } from "next";
@@ -19,13 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-                <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-
-      <body>
+      <head><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /></head>
+    <body>
         <AnimatePresence mode="wait">
           {children}
         </AnimatePresence>
-        
       </body>
     </html>
   );
