@@ -15,7 +15,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         <nav className={styles.navbar}>
           <Link href="/" className={pathname === '/' ? styles.active : ''}>Home</Link>
           <Link href="/timeline" className={pathname === '/timeline' ? styles.active : ''}>Experiência  Profissional</Link>
-          <Link href="/projetos" className={pathname === '/projetos' ? styles.active : ''}>Projetos</Link>
+          <Link href="/projects" className={pathname === '/projects' ? styles.active : ''}>Projetos</Link>
           <Link href="/about" className={pathname === '/about' ? styles.active : ''}>Sobre</Link>
         </nav>
         <main className={styles.main}>

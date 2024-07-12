@@ -1,6 +1,4 @@
 'use client';
-// src/pages/timeline.tsx
-
 import { motion } from 'framer-motion';
 import Layout from '../components/Layout';
 import TimelineItem from './TimelineItem';
