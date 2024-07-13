@@ -14,7 +14,9 @@ const About: React.FC = () => {
         transition={{ duration: 1 }}
         className={styles.container}
       >
-        <h1>Sobre</h1>
+      <main>
+      <h1 className='aboutTitle'>Sobre</h1>
+      <div className={styles.content}>
         <p>Tecnologias usadas na criação da página:</p>
         <ul>
         <li className={styles.techItem}>
@@ -30,6 +32,8 @@ const About: React.FC = () => {
               <span className="material-icons">devices</span> React
             </li>
         </ul>
+        </div>
+        </main>
       </motion.div>
     </Layout>
   );
