@@ -27,3 +27,7 @@ Rode o servidor de desenvolvimento:
 npm run dev
 ```
 Abra http://localhost:3000 no seu navegador para ver o resultado.
+
+<p align="center">
+<img width="50%" src="https://github.com/giseletoledo/portfolio/blob/main/portfolio_tela.png" alt="Tela da página listando filmes">
+</p>
