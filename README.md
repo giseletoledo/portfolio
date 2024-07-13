@@ -18,10 +18,12 @@ git clone https://github.com/usuario/repositorio.git
 cd repositorio
 
 Instale as dependências:
-```npm install
+```
+npm install
 ```
 
 Rode o servidor de desenvolvimento:
-```npm run dev
+```
+npm run dev
 ```
 Abra http://localhost:3000 no seu navegador para ver o resultado.
