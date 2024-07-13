@@ -114,6 +114,7 @@ const Projects: React.FC = () => {
       transition={{ duration: 0.5 }}
       className={styles.container}
     >
+      <h1>Projetos</h1>
       <div className={styles.projectsGrid}>
         {projects.map((project, index) => (
           <motion.div
@@ -124,6 +125,7 @@ const Projects: React.FC = () => {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             className={styles.projectsItem}
           >
+            
             <ProjectItem
               title={project.title}
               description={project.description}
