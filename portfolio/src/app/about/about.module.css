@@ -26,9 +26,15 @@
     justify-content: flex-start;
     margin: 1rem 0;
   }
+  .techItem h1 {
+    margin-bottom: 1rem;
+  }
+
+  .techItem span {
+    margin-right: 0.4rem;
+  }
   
   .techItem .material-icons {
-    margin-right: 0.8rem;
     font-size: 1.5rem;
     color: #d8bfd8;
   }
