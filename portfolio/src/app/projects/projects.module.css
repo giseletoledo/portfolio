@@ -7,7 +7,7 @@
 .projectsTitle {
   text-align: center;
   margin-bottom: 2rem;
-  color: #333;
+  color: var(--tag-text-color);
 }
 
 .projectsGrid {
@@ -17,9 +17,25 @@
 }
 
 .projectsItem {
-  margin-bottom: 2rem;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--border-color-dark);
   padding-bottom: 1.5rem;
+}
+
+.projectsItem > div + p{
+  margin-top: 1rem;
+}
+.projectsItem h4 {
+  color: var(--projects-title-color);
+;  margin-bottom: 0.5rem;
+}
+
+.projectsItem a {
+  margin-top: 0.5rem;
+}
+
+.projectsItem ul {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 768px) {
@@ -64,7 +80,7 @@
   margin-right: 0.5rem;
   display: inline-block;
   background-color: #222222;
-  color: #333;
+  color: var(--text-color-dark);
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
   font-size: 0.9rem;
