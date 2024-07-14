@@ -1,8 +1,9 @@
 'use client';
-
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Layout from './components/Layout';
 import styles from './page.module.css';
+
 
 const Home: React.FC = () => {
   return (
@@ -35,24 +36,24 @@ const Home: React.FC = () => {
           </div>
         </div>
         <div className={styles.githubStats}>
-          <h2>GitHub Statistics</h2>
-          <div className={styles.githubStat}>
-            <img
-              src="https://github-readme-stats.vercel.app/api/top-langs/?username=giseletoledo&layout=compact&theme=dark"
-              alt="Top Languages"
-              width="500"
-              height="200"
-            />
-          </div>
-          <div className={styles.githubStat}>
-            <img
-              src="https://github-readme-activity-graph.vercel.app/graph?username=giseletoledo&theme=react-dark"
-              alt="GitHub Activity Graph"
-              width="800"
-              height="300"
-            />
-          </div>
-        </div>
+  <h2>GitHub Statistics</h2>
+  <div className={styles.githubStat}>
+    <Image
+      src="https://github-readme-stats.vercel.app/api/top-langs/?username=giseletoledo&layout=compact&theme=dark"
+      alt="Top Languages"
+      width={500}
+      height={200}
+    />
+  </div>
+  <div className={styles.githubStat}>
+    <Image
+      src="https://github-readme-activity-graph.vercel.app/graph?username=giseletoledo&theme=react-dark"
+      alt="GitHub Activity Graph"
+      width={800}
+      height={300}
+    />
+  </div>
+</div>
       </motion.div>
     </Layout>
     

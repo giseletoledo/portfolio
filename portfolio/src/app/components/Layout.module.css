@@ -31,15 +31,17 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    justify-content: space-between;
     padding: 2rem;
   }  
 
   .footer {
-    margin: 0 auto;
     padding: 1rem 0;
     text-align: center;
     background-color:#2d2732;
     color: #d8bfd8;
     width: 100%;
+    position: relative;
+    bottom: 0; 
   }
   
