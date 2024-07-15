@@ -35,6 +35,20 @@
   margin-bottom: 0.5rem;
 }
 
+.projectItem > div + p {
+  margin-top: 1rem;
+}
+
+.projectItem h4 {
+  color: var(--projects-title-color);
+  margin-bottom: 0.5rem;
+}
+
+.projectItem a {
+  margin-top: 0.5rem;
+  word-wrap: break-word;
+}
+
 .projectItem ul {
   list-style-type: none;
   padding: 0;
