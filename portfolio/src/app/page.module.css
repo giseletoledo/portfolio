@@ -167,13 +167,12 @@
 /* Mobile */
 @media (max-width: 700px) {
   .content {
-    padding: 4rem;
+    padding: 2rem;
   }
 
   .grid {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
-    max-width: 320px;
     text-align: center;
   }
 
@@ -192,6 +191,11 @@
   .center::before {
     transform: none;
     height: 300px;
+  }
+   
+  .content{
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .description {
@@ -238,6 +242,13 @@
       rgb(var(--background-end-rgb)) 40%
     );
     z-index: 1;
+  }
+  .text {
+    width: 100%;
+  }
+  .image{
+    width: fit-content;
+    padding: 1rem;
   }
 }
 
