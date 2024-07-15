@@ -61,5 +61,25 @@
   margin: 2rem 0;
   list-style-type: none;
   flex-wrap: wrap;
+}
 
+@media (max-width: 768px) {
+  .timelineYear {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    background: #d8bfd8;
+    color: #1c1c1c;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 1rem;
+    position: relative;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+  }
+  .timelineContent {
+    width: 100%;
+  }
 }
