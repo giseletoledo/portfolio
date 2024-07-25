@@ -1,0 +1,91 @@
+.studyItem {
+  background-color: var(--project-bg-color);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(10, 10, 10, 0.1);
+  }
+  
+  .studyItem p {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+
+  .studyItem h2 {
+    margin-bottom: 1rem;
+  }
+  
+ .studyItemTitle {
+    font-size: 1.25rem;
+    color: var(--projects-title-color);
+    margin-bottom: 1rem;
+  }
+  
+ .imageContainer {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+ .imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  
+  .imageWrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .studyItem ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+  }
+  .studyItem ul li{
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    background-color: var(--tag-bg-color);
+    color: var(--tag-text-color);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .studyItem a {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    word-wrap: break-word;
+  }
+  
+  .studyItem a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Size-specific styles */
+  .small {
+    max-width: 300px;
+  }
+  
+  .large {
+    max-width: 600px;
+  }
+  
+  @media (max-width: 768px) {
+    .studyItem {
+      margin-bottom: 15px;
+    }
+  
+    .small, .large {
+      max-width: 100%;
+    }
+  }
+  

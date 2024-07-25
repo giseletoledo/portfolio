@@ -1,0 +1,31 @@
+/* Container */
+.container {
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+/* Container Heading */
+.container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--tag-text-color);
+}
+
+/* Studies Grid */
+.studiesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Duas colunas por padrão */
+  gap: 2rem;
+
+  /* Para telas menores (ajuste o breakpoint conforme necessário) */
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr; /* Uma única coluna */
+    justify-content: center;
+  }
+}
+
+.studiesItem{
+  transition: transform 0.3s ease;
+  border-bottom: 1px solid var(--border-color-dark);
+  padding-bottom: 1.5rem;
+}
