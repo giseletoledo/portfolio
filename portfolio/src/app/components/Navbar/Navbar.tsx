@@ -29,6 +29,7 @@ const Navbar: React.FC<NavbarProps> = ({ pathname }) => {
         <Link href="/" className={pathname === '/' ? styles.active : ''}>Home</Link>
         <Link href="/timeline" className={pathname === '/timeline' ? styles.active : ''}>Experiência Profissional</Link>
         <Link href="/projects" className={pathname === '/projects' ? styles.active : ''}>Projetos</Link>
+        <Link href="/studies" className={pathname === '/studies' ? styles.active : ''}>Estudos</Link>
         <Link href="/about" className={pathname === '/about' ? styles.active : ''}>Sobre</Link>
       </motion.div>
     </nav>
