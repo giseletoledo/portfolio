@@ -1,10 +1,9 @@
 .container {
-  background-color: #151313a4;
   color: #e0e0e0;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
 }
 
 .main {
@@ -13,7 +12,6 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
   padding: 2rem;
 }
 
@@ -23,6 +21,6 @@
   background-color:#2d2732;
   color: #d8bfd8;
   width: 100%;
-  position: relative;
-  bottom: 0;
+  position: fixed;
+  bottom: 0%;
 }
