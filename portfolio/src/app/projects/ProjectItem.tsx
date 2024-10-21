@@ -9,21 +9,22 @@ interface ProjectItemProps {
   technologies: string[];
   imageSrc: string;
   url: string;
-  size: 'small' | 'large';
 }
 
-const ProjectItem: React.FC<ProjectItemProps> = ({ title, description, features, technologies, imageSrc, url, size}) => {
-  const sizes = size === 'large' ? '(max-width: 768px) 100vw, 300px' : '(max-width: 768px) 100vw, 200px';
-
+const ProjectItem: React.FC<ProjectItemProps> = ({ title, description, features, technologies, imageSrc, url }) => {
   return (
-    <div className={`${styles.projectItem} ${styles[size]}`}>
+    <div className={styles.projectItem}>
       <h2>{title}</h2>
       <div className={styles.imageContainer}>
         <div className={styles.imageWrapper}>
-          <Image src={imageSrc} alt={title} 
-          fill style={{ objectFit: 'contain', borderRadius: '12px', padding: '0px 10px', backgroundColor:'#282626' }}
-          sizes={sizes}
-          priority />
+          <Image 
+            src={imageSrc} 
+            alt={title} 
+            sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" 
+            fill 
+            style={{ objectFit: 'cover', borderRadius: '12px', backgroundColor: '#282626', objectPosition: 'top left' }} 
+            priority 
+          />
         </div>
       </div>
       <p>{description}</p>
@@ -36,8 +37,8 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ title, description, features,
         ))}
       </ul>
       <div>
-      <Link href={url} target="_blank" rel="noopener noreferrer">
-{url}
+        <Link href={url} target="_blank" rel="noopener noreferrer">
+          {url}
         </Link>
       </div>
     </div>

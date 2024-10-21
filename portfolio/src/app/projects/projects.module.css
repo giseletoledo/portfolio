@@ -14,8 +14,8 @@
 /* Projects Grid */
 .projectsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Responsive columns */
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr)); /* Responsive columns */
+  gap: 3rem;
 }
 
 /* Project Items */

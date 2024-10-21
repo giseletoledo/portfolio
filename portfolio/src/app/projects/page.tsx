@@ -8,55 +8,28 @@ import Layout from '../components/Layout';
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: 'Angular ntt-movie',
-      description: 'Projeto de consumo de API de filmes com Angular. Busca de filmes na API OMDB',
-      features:'Filtro de busca dos filmes favoritos',
-      technologies: ['Angular 17', 'Git', 'GitHub'],
-      imageSrc: '/images/movieapi_angular.png',
-      url: 'https://github.com/giseletoledo/ntt-movie',
-      size: 'large',
+      title:'Blog Kotlin Spring',
+      description:'Este é um projeto de blog que permite aos usuários visualizar, pesquisar e interagir com artigos.',
+      features:'Criar,editar com ckeditor, atualizar e deletar artigos',
+      technologies: ['kotlin','JPA','Banco de dados H2','Postman'],
+      imageSrc:'/images/form_cadastro_blog.png',
+      url: 'https://github.com/giseletoledo/blog-kotlin-spring',
     },
     {
-      title: 'Next.js News Portal',
-      description: 'Portal de notícias responsivo utilizando Next.js',
-      features:'Configuração do Next.js para lidar com as requisições do backend. (Saiba mais em Routing: API Routes | Next.js)',
-      technologies: ['Next.js 14', 'React 18', 'TypeScript'],
-      imageSrc: '/images/newsapi_nextjs.png',
-      url: 'https://github.com/giseletoledo/news-app',
-      size: 'large',
-    },
-    {
-      title: 'Landing page - Nextjs e Django',
-      description: 'Frontend criado com Nextjs na versão 14 com API Route e Django 5.0.6.',
-      features:'Envio de formulário salvando os dados no banco com sqlite',
-      technologies: ['Next.js 14',
-        'React 18',
-        'TypeScript',
-        'Axios',
-        'React-Modal',
-        'Django',
-        'Django Rest Framework'],
-      imageSrc: '/images/fullstack_django.png',
-      url:'https://github.com/giseletoledo/nextjs-django',
-      size: 'large',
+      title:'API de Gerenciamento de notas',
+      description:'Esta é uma API para gerenciamento de notas utilizando .NET Core.',
+      features:'A API permite criar, atualizar, deletar e listar notas',
+      technologies: ['C#','Swagger','Postman'],
+      imageSrc:'/images/apicsharp-notes.png',
+      url: 'https://github.com/giseletoledo/TodoApiDocker',
     },
     {
       title:'API de Gerenciamento de Filmes',
       description:'A API de Gerenciamento de Filmes é uma aplicação para gerenciar informações sobre filmes',
-      features:'Filmes: Os filmes são a entidade principal da API e possuem diversos atributos para descrever suas características.Usuários: Usuários podem adicionar os filmes favoritos',
+      features:'Filmes: Os filmes são a entidade principal da API e possuem diversos atributos para descrever suas características. Usuários: Usuários podem adicionar os filmes favoritos',
       technologies: ['Java 17','JPA','Banco de dados H2','Postman'],
       imageSrc:'/images/apimovies_java.png',
       url: 'https://github.com/giseletoledo/academianttv2',
-      size: 'large',
-    },
-    {
-      title:'DIO - Trilha .NET - API e Entity Framework',
-      description:'API e Entity Framework, da trilha .NET da DIO.',
-      features: 'Um sistema gerenciador de tarefas, onde você poderá cadastrar uma lista de tarefas que permitirá organizar melhor a sua rotina.',
-      technologies: ['.NET 8', 'ASP.NET Core','Entity Framework Core','SQL Server','Swagger'],
-      imageSrc:'/images/apitarefas_csharp.png',
-      url: 'https://github.com/giseletoledo/trilha-net-api-desafio',
-      size: 'large',
     },
     {
       title:'Projeto: Catálogo de Livros com SQLite',
@@ -65,7 +38,6 @@ const Projects: React.FC = () => {
       technologies: ['Python','SQLite','Jupyter Notebook'],
       imageSrc:'/images/cadastro_python.png',
       url: 'https://github.com/giseletoledo/pythonSql',
-      size: 'large',
     },
     {
       title:'[Backend] Desafio Autodidata - Potência Tech',
@@ -74,25 +46,22 @@ const Projects: React.FC = () => {
       technologies: ['Node.js', 'Express.js','bcrypt', 'Postman'],
       imageSrc:'/images/autenticacao_node.png',
       url: 'https://github.com/giseletoledo/user-auth',
-      size: 'large',
     },
     {
-      title:'Chef Delivery App',
-      description:'Aplicativo que utiliza Swift UI',
-      features: 'Lista um cardápio, com animação na splash screen e calculo de preços no carrinho.',
-      technologies: ['Swift', 'SwiftUI', 'XCode', 'Animações'],
-      imageSrc:'/images/ChefDelivery_iPhone.gif',
-      url: 'https://github.com/giseletoledo/chef-delivery-app',
-      size: 'small',
+      title: 'Angular ntt-movie',
+      description: 'Projeto de consumo de API de filmes com Angular. Busca de filmes na API OMDB',
+      features:'Filtro de busca dos filmes favoritos',
+      technologies: ['Angular 17', 'Git', 'GitHub'],
+      imageSrc: '/images/movieapi_angular.png',
+      url: 'https://github.com/giseletoledo/ntt-movie',
     },
     {
-      title:'Expenses App',
-      description:'Projeto de um app que controla gastos. Desafio do curso da MJV de criar um app com os conceitos ensinados durante o curso no prazo de 5 dias',
-      features: 'Controle de gastos divididos em categorias',
-      technologies: ['Flutter', 'Provider'],
-      imageSrc:'/images/expensesapp_flutter.png',
-      url: 'https://github.com/giseletoledo/expenses-app',
-      size: 'small',
+      title: 'Next.js News Portal',
+      description: 'Portal de notícias responsivo utilizando Next.js',
+      features:'Configuração do Next.js para lidar com as requisições do backend. (Saiba mais em Routing: API Routes | Next.js)',
+      technologies: ['Next.js 14', 'React 18', 'TypeScript'],
+      imageSrc: '/images/newsapi_nextjs.png',
+      url: 'https://github.com/giseletoledo/news-app',
     },
     {
       title:'HQ App',
@@ -101,8 +70,15 @@ const Projects: React.FC = () => {
       technologies: ['Android', 'Viewmodel', 'RecyclerView', 'Databinding','SQLite'],
       imageSrc:'/images/apimovies_android.png',
       url: 'https://github.com/giseletoledo/hq-comic-app',
-      size: 'small',
-    }
+    },
+    {
+      title:'Expenses App',
+      description:'Projeto de um app que controla gastos. Desafio do curso da MJV de criar um app com os conceitos ensinados durante o curso no prazo de 5 dias',
+      features: 'Controle de gastos divididos em categorias',
+      technologies: ['Flutter', 'Provider'],
+      imageSrc:'/images/expensesapp_flutter.png',
+      url: 'https://github.com/giseletoledo/expenses-app',
+    },
   ];
 
   return (
@@ -133,7 +109,6 @@ const Projects: React.FC = () => {
               technologies={project.technologies}
               imageSrc={project.imageSrc}
               url={project.url}
-              size={project.size === 'large' || project.size === 'small' ? project.size : 'small'}
             />
           </motion.div>
         ))}

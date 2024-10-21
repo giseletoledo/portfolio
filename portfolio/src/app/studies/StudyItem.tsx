@@ -9,14 +9,12 @@ interface StudyItemProps {
   technologies: string[];
   imageSrc: string;
   url: string;
-  size: 'small' | 'large';
 }
 
-const StudyItem: React.FC<StudyItemProps> = ({ title, description, features, technologies, imageSrc, url, size }) => {
-  const sizes = size === 'large' ? '(max-width: 768px) 100vw, 300px' : '(max-width: 768px) 100vw, 200px';
+const StudyItem: React.FC<StudyItemProps> = ({ title, description, features, technologies, imageSrc, url }) => {
 
   return (
-    <article className={`${styles.studyItem} ${styles[size]}`}>
+    <article className={`${styles.studyItem}`}>
       <header>
         <h2>{title}</h2>
       </header>
@@ -27,7 +25,6 @@ const StudyItem: React.FC<StudyItemProps> = ({ title, description, features, tec
             alt={title}
             fill
             style={{ objectFit: 'contain', borderRadius: '12px', padding: '0px 10px', backgroundColor:'#282626' }}
-            sizes={sizes}
             priority
           />
         </div>
