@@ -46,7 +46,7 @@ const Home: React.FC = () => {
             </p>
           </div>
           <div className={styles.imageContainer}>
-            <img src="./images/profile.jpeg" alt="Profile" className={styles.image} />
+            <img src="./images/profile.png" alt="Profile" className={styles.image} />
           </div>
         </div>
        
