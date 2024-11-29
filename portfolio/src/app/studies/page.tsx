@@ -14,7 +14,6 @@ const Studies: React.FC = () => {
       technologies: ['Swift', 'API Marvel', 'UIKit', 'Storyboard'],
       imageSrc: '/images/ ComicApp_iPhone_15_Pro_tabbar.png',
       url: 'https://github.com/giseletoledo/ComicsApp',
-      size: 'small',
     },
     {
       title: 'Landing page - Nextjs e Django',
@@ -29,7 +28,6 @@ const Studies: React.FC = () => {
         'Django Rest Framework'],
       imageSrc: '/images/fullstack_django.png',
       url:'https://github.com/giseletoledo/nextjs-django',
-      size: 'large',
     },
     {
       title:'DIO - Trilha .NET - API e Entity Framework',
@@ -38,7 +36,6 @@ const Studies: React.FC = () => {
       technologies: ['.NET 8', 'ASP.NET Core','Entity Framework Core','SQL Server','Swagger'],
       imageSrc:'/images/apitarefas_csharp.png',
       url: 'https://github.com/giseletoledo/trilha-net-api-desafio',
-      size: 'large',
     },
     {
       title:'Chef Delivery App',
@@ -47,7 +44,6 @@ const Studies: React.FC = () => {
       technologies: ['Swift', 'SwiftUI', 'XCode', 'Animações'],
       imageSrc:'/images/ChefDelivery_iPhone.gif',
       url: 'https://github.com/giseletoledo/chef-delivery-app',
-      size: 'large',
     },
     {
       title: 'iOS viewcode (Backfront)',
@@ -56,7 +52,6 @@ const Studies: React.FC = () => {
       technologies: ['Swift','UIKit', 'Viewcode', 'API OpenWeather'],
       imageSrc: '/images/WeatherAppiPhone15Pro.gif',
       url: 'https://github.com/giseletoledo/wheatherapp',
-      size: 'large',
     },
   ];
   return (
@@ -86,7 +81,6 @@ const Studies: React.FC = () => {
                 technologies={study.technologies}
                 imageSrc={study.imageSrc}
                 url={study.url}
-                size={study.size === 'large' || study.size === 'small' ? study.size : 'small'}
               />
             </motion.div>
           ))}
