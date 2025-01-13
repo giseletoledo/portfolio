@@ -280,9 +280,17 @@
   .text {
     width: 100%;
   }
-  .image{
-    width: fit-content;
-    padding: 1rem;
+
+  .imageContainer {
+    /* Ajuste o tamanho da imagem no container para dispositivos menores */
+    width: 100%;
+    max-width: 300px; /* ou qualquer tamanho que você considere adequado */
+    margin: 0 auto; /* Centraliza a imagem */
+  }
+
+  .image {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
   }
 }
 
