@@ -8,6 +8,30 @@ import Layout from '../components/Layout';
 const Projects: React.FC = () => {
   const projects = [
     {
+      title: 'ForumHub',
+      description: 'ForumHub é uma aplicação backend desenvolvida em Java utilizando Spring Boot, destinada à gestão de tópicos em um fórum. Ela permite a criação, edição e consulta de tópicos baseados em cursos e datas de criação.',
+      features: 'Persistência com JPA, Spring Security, Swagger',
+      technologies: ['Java', 'API', 'MySql', 'JPA','Swagger'],
+      imageSrc: '/images/forumhub_java.png',
+      url: 'https://github.com/giseletoledo/forum',
+    },
+ {
+      title: 'LiterAlura',
+      description: 'Catálogo de Livros que ofereça interação textual (via console) com os usuários, proporcionando no mínimo 5 opções de interação. Os livros serão buscados através de uma API específica.',
+      features: 'banco de dados e integração com API',
+      technologies: ['Java', 'OOP', 'API Gutendex'],
+      imageSrc: '/images/literalura_java.png',
+      url: 'https://github.com/giseletoledo/literalura',
+    },
+    {
+      title: 'Conversor de Moedas',
+      description: 'Conversor de Moedas que oferece interação textual (via console) com os usuários, conversões de moedas em um menu. A taxa de conversão é obtida por meio da ExchangeRate API.',
+      features: 'UIKIt, persistência, Navegação com segue e tabbar, integração com API',
+      technologies: ['Java', 'API', 'OOP', 'ExchangeRate API'],
+      imageSrc: '/images/conversor_moeda_java.png',
+      url: 'https://github.com/giseletoledo/currency-converter',
+    },
+    {
       title:'Blog Kotlin Spring',
       description:'Este é um projeto de blog que permite aos usuários visualizar, pesquisar e interagir com artigos.',
       features:'Criar,editar com ckeditor, atualizar e deletar artigos',
@@ -62,14 +86,6 @@ const Projects: React.FC = () => {
       technologies: ['Next.js 14', 'React 18', 'TypeScript'],
       imageSrc: '/images/newsapi_nextjs.png',
       url: 'https://github.com/giseletoledo/news-app',
-    },
-    {
-      title:'HQ App',
-      description:'Aplicativo Android que faz o consumo de dados da API Marvel e persistência de dados com SQLite',
-      features: 'Listar dados da API da Marvel(http://marvel.com) e salva no banco de dados',
-      technologies: ['Android', 'Viewmodel', 'RecyclerView', 'Databinding','SQLite'],
-      imageSrc:'/images/apimovies_android.png',
-      url: 'https://github.com/giseletoledo/hq-comic-app',
     },
     {
       title:'Expenses App',
