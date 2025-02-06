@@ -35,8 +35,13 @@
   font-size: 1.25rem;
   color: var(--projects-title-color);
   margin-bottom: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   text-align: left;
+}
+
+.projectItem h2{
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .projectItem p {
