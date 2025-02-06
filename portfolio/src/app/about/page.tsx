@@ -23,9 +23,6 @@ const About: React.FC = () => {
               <span className="material-icons">code</span> Next.js
             </li>
             <li className={styles.techItem}>
-              <span className="material-icons">storage</span> PostgreSQL
-            </li>
-            <li className={styles.techItem}>
               <span className="material-icons">brush</span> Framer Motion
             </li>
             <li className={styles.techItem}>
