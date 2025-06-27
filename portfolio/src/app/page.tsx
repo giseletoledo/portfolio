@@ -19,7 +19,7 @@ const Home: React.FC = () => {
         <div className={styles.content}>
           <div className={styles.text}>
             <h2>Quem sou eu?</h2>
-            <p>Sou desenvolvedora com experiência nas linguagens Javascript e Python, frameworks NodeJS, Flask e Next.js. Conhecimento em SQL, PostgresSQL, Mongodb e Cloud.</p>
+            <p>Sou desenvolvedora com experiência nas linguagens Javascript e Python, frameworks NodeJS, Flask e Next.js. Conhecimento em Java, FastAPI, SQL, PostgresSQL, Mongodb e Cloud.</p>
             <h2>Tecnologias</h2>
             <div className={styles.icons}>
              <SiHtml5 className={styles.icon} />
@@ -46,6 +46,7 @@ const Home: React.FC = () => {
               após formações recentes em cloud computing com AWS e IA generativa com o Google.
               Busco integrar esses conhecimentos à minha experiência em desenvolvimento,
               contribuindo em projetos de software inteligentes, robustos e inovadores.
+              Tecnologias - Langchain, GenAI, OpenAI, Hugging Face.
             </p>
           </div>
           <div className={styles.imageContainer}>
