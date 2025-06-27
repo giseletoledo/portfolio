@@ -150,7 +150,7 @@
 }
 
 .icon {
-  color: #000; /* Define uma cor padrão */
+  color: #ffffff; /* Define uma cor padrão */
   font-size: 50px; /* Ajusta o tamanho dos ícones */
   transition: color 0.3s ease;
 }
