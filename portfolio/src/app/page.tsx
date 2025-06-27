@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Layout from './components/Layout';
 import styles from './page.module.css';
-import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiNodedotjs, SiPython, SiGooglecolab, SiMysql,SiMongodb } from "react-icons/si";
+import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiNodedotjs, SiPython, SiGooglecolab, SiMysql, SiMongodb, SiDocker } from "react-icons/si";
 
 const Home: React.FC = () => {
   return (
@@ -29,6 +29,7 @@ const Home: React.FC = () => {
              <SiPython className={styles.icon}/>
              <SiNodedotjs className={styles.icon} />
              <SiGooglecolab className={styles.icon} />
+             <SiDocker className={styles.icon}/>
              <SiMysql className={styles.icon}/>
              <SiMongodb className={styles.icon}/>
             </div>
