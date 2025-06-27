@@ -48,14 +48,6 @@ const Projects: React.FC = () => {
       url: 'https://github.com/giseletoledo/TodoApiDocker',
     },
     {
-      title:'API de Gerenciamento de Filmes',
-      description:'A API de Gerenciamento de Filmes é uma aplicação para gerenciar informações sobre filmes',
-      features:'Filmes: Os filmes são a entidade principal da API e possuem diversos atributos para descrever suas características. Usuários: Usuários podem adicionar os filmes favoritos',
-      technologies: ['Java 17','JPA','Banco de dados H2','Postman'],
-      imageSrc:'/images/apimovies_java.png',
-      url: 'https://github.com/giseletoledo/academianttv2',
-    },
-    {
       title:'Projeto: Catálogo de Livros com SQLite',
       description:'Este projeto implementa um sistema de catálogo de livros utilizando a biblioteca SQLite em Python. Projeto final do curso da IBM',
       features: 'O sistema permite cadastrar livros, buscar livros pelo título ou autor, verificar a disponibilidade de exemplares e realizar o empréstimo de livros.',
@@ -78,14 +70,6 @@ const Projects: React.FC = () => {
       technologies: ['Angular 17', 'Git', 'GitHub'],
       imageSrc: '/images/movieapi_angular.png',
       url: 'https://github.com/giseletoledo/ntt-movie',
-    },
-    {
-      title: 'Next.js News Portal',
-      description: 'Portal de notícias responsivo utilizando Next.js',
-      features:'Configuração do Next.js para lidar com as requisições do backend. (Saiba mais em Routing: API Routes | Next.js)',
-      technologies: ['Next.js 14', 'React 18', 'TypeScript'],
-      imageSrc: '/images/newsapi_nextjs.png',
-      url: 'https://github.com/giseletoledo/news-app',
     },
     {
       title:'Expenses App',
