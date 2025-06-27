@@ -8,6 +8,14 @@ import Layout from '../components/Layout';
 const Studies: React.FC = () => {
   const studies = [
     {
+      title: 'Google Data Analytics Capstone',
+      description: 'Projeto final do curso do Google de Análise de dados',
+      features: 'análise exploratória,limpeza de dados, análise de dados com R',
+      technologies: ['SQL', 'Big Query', 'Planilhas', 'R', 'Kaggle'],
+      imageSrc: '/images/kaggle_fitbit_google_R.png',
+      url: 'https://github.com/giseletoledo/case-study-wellness-smart',
+    },
+    {
       title: 'Gerador de video',
       description: 'Experimento com Python e Jupyter notebook para gerar vídeo a partir de imagens e legenda que o usuário cria',
       features: 'uso de bibliotecas para geração de video',
@@ -28,7 +36,7 @@ const Studies: React.FC = () => {
       description: 'Aplicativo que utiliza Swift UI',
       features: 'Implementação de CoreData, MVVM e NavigationStack',
       technologies: ['Swift', 'SwiftUI', 'XCode', 'Animações'],
-      imageSrc: '/images/SimulatorScreenRecording16.gif',
+      imageSrc: '/images/remind_simulator_16.gif',
       url: 'https://github.com/giseletoledo/reMind',
     },
     {
@@ -36,16 +44,8 @@ const Studies: React.FC = () => {
       description: 'Criação de interface com UIKit e conteúdo da API Marvel',
       features: 'UIKIt, persistência, Navegação com segue e tabbar, integração com API',
       technologies: ['Swift', 'API Marvel', 'UIKit', 'Storyboard'],
-      imageSrc: '/images/ ComicApp_iPhone_15_Pro_tabbar.png',
+      imageSrc: '/images/comicapp_simulator_15_pro.png',
       url: 'https://github.com/giseletoledo/ComicsApp',
-    },
-    {
-      title:'InstaApp',
-      description:'App de imagens semelhante ao instagram',
-      features: 'Navegação bottomNavigation (react native navigation), lista de posts com o avatar do usuário, foto e o like, o usuário tem uma página de perfil, cadastro de posts que salva no armazenamento temporário com asyncstorage',
-      technologies: ['React','asyncstorage','Expo'],
-      imageSrc:'/images/app_react_native.jpg',
-      url: 'https://github.com/giseletoledo/appreactnative',
     },
     {
       title: 'DIO - Trilha .NET - API e Entity Framework',
@@ -60,7 +60,7 @@ const Studies: React.FC = () => {
       description: 'Aplicativo que utiliza Swift UI',
       features: 'Lista um cardápio, com animação na splash screen e calculo de preços no carrinho.',
       technologies: ['Swift', 'SwiftUI', 'XCode', 'Animações'],
-      imageSrc: '/images/ChefDelivery_iPhone.gif',
+      imageSrc: '/images/chefdelivery_iphone.gif',
       url: 'https://github.com/giseletoledo/chef-delivery-app',
     },
     {
@@ -68,7 +68,7 @@ const Studies: React.FC = () => {
       description: 'Aplicativo iOS de previsão de tempo integrado com a API OpenWeather',
       features: 'Viewcode, integração com API',
       technologies: ['Swift', 'UIKit', 'Viewcode', 'API OpenWeather'],
-      imageSrc: '/images/WeatherAppiPhone15Pro.gif',
+      imageSrc: '/images/weatherapp_iphone15_pro.gif',
       url: 'https://github.com/giseletoledo/wheatherapp',
     },
     {
