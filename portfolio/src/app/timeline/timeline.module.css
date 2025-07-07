@@ -13,8 +13,10 @@
 }
 
 .timelineContent {
-  background-color: #422e59;
-  color: #e0e0e0;
+  background: #ffb703;
+  color: #000000;
+  /* Borda estilizada para quadrinhos */
+  border: 3px solid #000;
   padding: 1rem;
   word-wrap: break-word;
   border-radius: 8px;
@@ -26,8 +28,13 @@
   align-items: center;
   justify-content: center;
   width: 10%;
-  background: #d8bfd8;
+  background: #f9870e;
   color: #1c1c1c;
+  /* Borda estilizada para quadrinhos */
+  border: 3px solid #000;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-transform: uppercase;
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
   border-radius: 8px;
   font-weight: bold;
   padding: 1rem;
@@ -41,7 +48,8 @@
 
 .container {
   padding: 2rem;
-  background-color: #151313a4;
+  position: relative;
+  opacity: 0.3;
   border-radius: 8px;
   width: 100%;
   max-width: 800px;
@@ -49,10 +57,33 @@
   flex-wrap: wrap;
 }
 
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('/images/background_comics.png');
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 6px;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
 .title {
+  text-transform: uppercase;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
   text-align: center;
   margin-bottom: 2rem;
-  color: #ffffff;
+  color: #000000;
 }
 
 .timeline {
