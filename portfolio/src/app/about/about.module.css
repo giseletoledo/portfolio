@@ -1,48 +1,128 @@
 .container {
     padding: 1rem;
-  }
-  
-  .container ul {
+    background-color: var(--bg-color);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.container ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .container li::before {
+}
+
+.container li::before {
     content: '•';
     color: #d8bfd8;
     padding-right: 1rem;
-  }  
-
-  .container h1{
-    text-align: center;
-  }
-
-.content{
-  margin-top: 1rem;
-  background-color: #422e59;
-  border-radius: 8px;
-  padding: 2rem;
 }
-  .techList {
+
+.title {
+    text-transform: uppercase;
+    background-color: var(--accent-text-color);
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
+    color: var(--text-color-dark);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.content {
+    margin-top: 1rem;
+    background-color: var(--card-color);
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
+    border: 3px solid var(--border-dark-color);
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    width: 70%;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--text-color-dark);
+}
+
+.text p {
+    margin-bottom: 10px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.icon {
+    color: #ffffff;
+    font-size: 50px;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #007bff;
+}
+
+.icon:nth-child(1) { color: #e34c26; } /* HTML5 */
+.icon:nth-child(2) { color: #1572b6; } /* CSS3 */
+.icon:nth-child(3) { color: #f7e51e; } /* JavaScript */
+.icon:nth-child(4) { color: #130fe3; } /* TypeScript */
+.icon:nth-child(5) { color: #306998; } /* Python */
+.icon:nth-child(6) { color: #68a063; } /* Node.js */
+.icon:nth-child(7) { color: #fc9e08; } /* Google Colab */
+.icon:nth-child(8) { color: #027cff; } /* Docker */
+.icon:nth-child(9) { color: #1030e5; } /* MySQL */
+.icon:nth-child(10) { color: #08a745; } /* MongoDB */
+
+.imageContainer {
+    width: 30%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.techList {
     list-style: none;
     padding: 0;
-  }
-  
-  .techItem {
+}
+
+.techItem {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     margin: 1rem 0;
-  }
-  .techItem h1 {
-    margin-bottom: 1rem;
-  }
+}
 
-  .techItem span {
+.techItem span {
     margin-right: 0.4rem;
-  }
-  
-  .techItem .material-icons {
-    font-size: 1.5rem;
-    color: #d8bfd8;
-  }
+}
+
+/* Media Queries */
+@media (max-width: 700px) {
+    .content {
+        padding: 2rem;
+        flex-direction: column-reverse;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .imageContainer {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
