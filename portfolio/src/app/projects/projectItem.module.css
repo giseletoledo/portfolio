@@ -1,8 +1,9 @@
 .projectItem {
-  background-color: var(--project-bg-color);
+  background-color: var(--card-color);
   padding: 1rem;
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(10, 10, 10, 0.1);
+  border:  3px solid var(--border-dark-color);
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -24,16 +25,14 @@
 }
 
 .imageContainer {
-  padding: 0.7rem;
   width: 90%;
   height: 100%; 
   border-radius: 12px;
-  background-color: #282626;
 }
 
 .projectItemTitle {
   font-size: 1.25rem;
-  color: var(--projects-title-color);
+  color: var(--text-color-dark);
   margin-bottom: 1rem;
   margin-bottom: 1rem;
   text-align: left;
@@ -53,7 +52,7 @@
 }
 
 .projectItem h4 {
-  color: var(--projects-title-color);
+  color: var(--text-color-dark);
   margin-bottom: 0.5rem;
 }
 
