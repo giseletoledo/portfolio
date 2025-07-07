@@ -1,0 +1,114 @@
+.menuContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+  padding-bottom: 1rem;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.link {
+  background: #ffb703;
+  padding: 15px 25px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 25px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-transform: uppercase;
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
+  position: relative;
+  transition: all 0.3s ease;
+  /* Borda estilizada para quadrinhos */
+  border: 3px solid #000;
+}
+
+/* Efeito hover */
+.link:hover {
+  background: #ff9e00;
+  transform: translateY(-3px);
+  box-shadow: 6px 6px 0 rgba(0,0,0,0.2);
+}
+
+.link:hover::before,
+.link:hover::after {
+  color: #ffeb3b;
+}
+
+.menuItem:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.menuContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #fdf6e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  background: url('/images/profile.png') no-repeat center/cover;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 2;
+}
+
+/* Todos os itens */
+.menuItem {
+  position: absolute;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #f77f00;
+  z-index: 1;
+}
+
+.menuItem {
+  position: absolute;
+  display: flex;
+  flex-direction: column; /* Padrão: label em cima, seta embaixo */
+  align-items: center;
+  gap: 10px;
+}
+
+.arrowBottom {
+  flex-direction: column-reverse; /* Inverte: seta em cima, label embaixo */
+}
+
+.arrowContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
