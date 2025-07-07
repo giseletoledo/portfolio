@@ -14,9 +14,9 @@ interface StudyItemProps {
 const StudyItem: React.FC<StudyItemProps> = ({ title, description, features, technologies, imageSrc, url }) => {
 
   return (
-    <article className={`${styles.studyItem}`}>
+    <article className={styles.studyItem}>
       <header>
-        <h2>{title}</h2>
+        <h2 className={styles.studyItemTitle}>{title}</h2>
       </header>
       <div className={styles.imageContainer}>
         <div className={styles.imageWrapper}>
@@ -24,7 +24,7 @@ const StudyItem: React.FC<StudyItemProps> = ({ title, description, features, tec
             src={imageSrc}
             alt={title}
             fill
-            style={{ objectFit: 'contain', borderRadius: '12px', padding: '0px 10px', backgroundColor:'#282626' }}
+            style={{ objectFit: 'contain', borderRadius: '12px', padding: '0px 10px', backgroundColor:'#ffffff' }}
             priority
           />
         </div>
