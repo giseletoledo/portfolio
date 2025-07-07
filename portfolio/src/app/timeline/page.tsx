@@ -6,6 +6,11 @@ import styles from './timeline.module.css';
 
 const Timeline: React.FC = () => {
   const timelineItems = [
+     {
+      year: '2024-2025',
+      title: 'FullStack Developer',
+      description: 'API, Python, React.js,Django, SQlite',
+    },
     {
       year: '2022',
       title: 'Analista de sistemas',
@@ -17,7 +22,7 @@ const Timeline: React.FC = () => {
       description: 'WordPress, Edição de vídeo',
     },
     {
-      year: '2015-2016',
+      year: '2014-2016',
       title: 'Portal de Sistema de Ensino',
       description: 'Templates Jinja, HTML/CSS, Bootstrap, JQuery',
     },
@@ -27,7 +32,7 @@ const Timeline: React.FC = () => {
       description: 'Flash/AS3,Photoshop,Illustrator',
     },
     {
-      year: '2015-2016',
+      year: '2011-2013',
       title: 'Portal de Sistema de Ensino',
       description: 'Flash/AS3,Photoshop,Illustrator',
     },
