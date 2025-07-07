@@ -1,7 +1,7 @@
 # Portfolio
 
 <p align="center">
-<img width="50%" src="https://github.com/giseletoledo/portfolio/blob/main/portfolio_tela.png" alt="Tela da página listando filmes">
+<img width="50%" src="https://github.com/giseletoledo/portfolio/blob/main/menu_inicial_portifolio.png" alt="Tela da página listando filmes">
 </p>
 
 Este projeto é um exemplo de aplicação Next.js com animações usando Framer Motion e um layout responsivo. Ele exibe uma lista de projetos com suas descrições, funcionalidades, tecnologias utilizadas e links externos.
