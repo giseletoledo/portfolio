@@ -18,8 +18,14 @@
 /* Projects Grid */
 .projectsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr)); /* Responsive columns */
   gap: 3rem;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 370px), 1fr));
+}
+
+/* Ajuste para quando há apenas 1 item */
+.projectsGrid:has(> :only-child) {
+  grid-template-columns: 1fr;
 }
 
 /* Project Items */
@@ -50,10 +56,57 @@
   margin-top: 0.5rem;
 }
 
+.noProjects{
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color-dark);
+  margin-bottom: 1rem;
+  align-items: center;
+   opacity: 0.6;
+}
+
+.techFilter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.techButton {
+  background: white;
+  border: 2px solid transparent;
+  padding: 10px;
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.techButton:hover {
+  border-color: #aaa;
+}
+
+.techButton.active {
+  border-color: #007bff;
+  background-color: #e6f0ff;
+}
+
+
 /* Media Query for Mobile */
 @media (max-width: 768px) {
   .projectsGrid {
     grid-template-columns: 1fr; /* Single column on mobile */
     padding: 0 1rem; /* Padding to prevent content from touching the edges */
+  }
+}
+/* Desktop: força sempre duas colunas */
+@media (min-width: 768px) {
+  .projectsGrid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
