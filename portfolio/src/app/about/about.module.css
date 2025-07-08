@@ -12,12 +12,6 @@
     padding: 0;
 }
 
-.container li::before {
-    content: '•';
-    color: #d8bfd8;
-    padding-right: 1rem;
-}
-
 .title {
     text-transform: uppercase;
     background-color: var(--accent-text-color);
@@ -56,10 +50,11 @@
     gap: 8px;
     font-size: 2rem;
     flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 
 .icon {
-    color: #ffffff;
+    color: var(--text-color-dark);
     transition: color 0.3s ease;
 }
 
@@ -71,12 +66,13 @@
 .icon:nth-child(2) { color: #1572b6; } /* CSS3 */
 .icon:nth-child(3) { color: #f7e51e; } /* JavaScript */
 .icon:nth-child(4) { color: #130fe3; } /* TypeScript */
-.icon:nth-child(5) { color: #306998; } /* Python */
+.icon:nth-child(5) { color: #130fe3; } /* React */
 .icon:nth-child(6) { color: #68a063; } /* Node.js */
-.icon:nth-child(7) { color: #fc9e08; } /* Google Colab */
-.icon:nth-child(8) { color: #027cff; } /* Docker */
-.icon:nth-child(9) { color: #1030e5; } /* MySQL */
-.icon:nth-child(10) { color: #08a745; } /* MongoDB */
+.icon:nth-child(7) { color: #107370; } /* Python */
+.icon:nth-child(8) { color: #009485; } /* FastAPI */
+.icon:nth-child(9) { color: #1030e5 } /* Docker */
+.icon:nth-child(10) { color: #027cff; } /* MySQL */
+.icon:nth-child(11) { color: #08a745; } /* MongoDB */
 
 .imageContainer {
     width: 30%;
@@ -106,6 +102,11 @@
 
 .techItem span {
     margin-right: 0.4rem;
+}
+.techItem ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* Media Queries */

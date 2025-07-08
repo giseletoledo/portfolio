@@ -3,7 +3,10 @@
 import { motion } from 'framer-motion';
 import Layout from '../components/Layout';
 import styles from './about.module.css';
-import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiPython, SiNodedotjs, SiGooglecolab, SiDocker, SiMysql, SiMongodb } from 'react-icons/si';
+import { SiHtml5, SiCss3, SiJavascript, SiReact,SiTypescript, SiFastapi, SiPython, SiNodedotjs, SiGooglecolab, SiDocker, SiMysql, SiMongodb } from 'react-icons/si';
+import { RiNextjsLine } from "react-icons/ri";
+import { TbBrandFramerMotion } from "react-icons/tb";
+
 
 const About: React.FC = () => {
   return (
@@ -25,9 +28,10 @@ const About: React.FC = () => {
              <SiCss3 className={styles.icon}/>
              <SiJavascript className={styles.icon} />
              <SiTypescript className={styles.icon} />
-             <SiPython className={styles.icon}/>
+             <SiReact className={styles.icon} />
              <SiNodedotjs className={styles.icon} />
-             <SiGooglecolab className={styles.icon} />
+             <SiPython className={styles.icon}/>
+             <SiFastapi className={styles.icon}/>
              <SiDocker className={styles.icon}/>
              <SiMysql className={styles.icon}/>
              <SiMongodb className={styles.icon}/>
@@ -50,13 +54,13 @@ const About: React.FC = () => {
             <p>Tecnologias usadas na criação da página:</p>
         <ul>
         <li className={styles.techItem}>
-              <span className="material-icons">code</span> Next.js
+              <span className="material-icons"><RiNextjsLine/></span> Next.js
             </li>
             <li className={styles.techItem}>
-              <span className="material-icons">brush</span> Framer Motion
+              <span className="material-icons"><TbBrandFramerMotion /></span> Framer Motion
             </li>
             <li className={styles.techItem}>
-              <span className="material-icons">devices</span> React
+              <span className="material-icons"><SiReact/></span> React
             </li>
         </ul>
           </div>
