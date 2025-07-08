@@ -53,14 +53,13 @@
 .icons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 8px;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 .icon {
     color: #ffffff;
-    font-size: 50px;
     transition: color 0.3s ease;
 }
 
