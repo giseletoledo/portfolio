@@ -20,12 +20,6 @@
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 370px), 1fr));
-
-  /* Para telas menores (ajuste o breakpoint conforme necessário) */
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr; /* Uma única coluna */
-    justify-content: center;
-  }
 }
 
 /* Ajuste para quando há apenas 1 item */
@@ -55,4 +49,11 @@
   color: var(--text-color-dark);
   margin-bottom: 1rem;
   align-items: center;
+}
+
+/* Desktop: força sempre duas colunas */
+@media (min-width: 768px) {
+  .studiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
