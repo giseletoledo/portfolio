@@ -17,7 +17,7 @@ const Navbar: React.FC<NavbarProps> = ({ pathname }) => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.hamburger} onClick={toggleMenu}>
-      <span className="material-symbols-outlined">
+      <span className="material-symbols-outlined hamburger-icon">
             menu
       </span>
       </div>
