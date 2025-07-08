@@ -3,7 +3,6 @@
 import { Metadata } from "next";
 import "./globals.css";
 
-
 import { AnimatePresence } from "framer-motion";
 
 const metadata: Metadata = {
