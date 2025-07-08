@@ -11,6 +11,7 @@
   .hamburger {
     display: none;
     cursor: pointer;
+    color: var(--navbar-text-color);
   }
   
   .menu {
